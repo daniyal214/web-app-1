@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #box{
+            height: 300px;
+            width: 300px;
+            background-color: darkcyan;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="box">
+        <h2>HELLO !!</h2>
+    </div>
+
+        <script>
+            var elem = document.querySelector('#box');
+
+            elem.animate([
+                {transform: 'scale(0.1) rotate(0) translate(0, 0)', background: 'white', color: 'black'},
+                {transform: 'scale(1) rotate(360deg) translate(100px, 0)', background: 'blue', color: 'white'},
+                {transform: 'scale(0.1) rotate(720deg) translate(200px, 0)', background: 'white', color: 'black'},
+                // {transform: 'rotate(-360deg) translate(300px, 0)', background: 'yellow'},
+                // {transform: 'rotate(0) translate(0, 0)', background: 'purple'},
+
+
+            ], {
+                duration: 4000,
+                iterations: Infinity
+            })
+
+        </script>
+
+    
+
+
+
+    </script>
+</body>
+</html>
